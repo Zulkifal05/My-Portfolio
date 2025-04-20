@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Zulkifal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class="logo">Syed Zulkifal Ali</div>
+
+        <!--Menu bar for smaller devices-->
+        <div class="menu-div">
+            <div class="menu-slider" id="slider1"></div>
+            <div class="menu-slider" id="slider2"></div>
+            <div class="menu-slider" id="slider3"></div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="#Myself">Myself</a>
+            <a href="#Education">Skillset</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact-Me">Contact</a>
+        </div>
+    </div>
+     
+    <!--Menu div (icons) for smaller devices-->
+    <div class="menu-icons-container" id="hide">
+        <div class="menu-icons-div">
+            <div class="menu-cross-btn-div">
+                <div class="cross1"></div>
+                <div class="cross2"></div>
+            </div>
+
+            <a href="#Myself">Myself</a>
+            <a href="#Education">Skillset</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact-Me">Contact</a>
+        </div>
+    </div>
+
+    <!--About Section-->
+    <section id="Myself">
+        <div class="myself">
+            <p class="main-para"><span>Assalamoalaikum!</span> I am <br><span>Syed Zulkifal Ali Shah Bokhary</span> currently doing BS Computer Science from <br><span>UET Taxila</span>. I am learning <span>Web Development</span> and also exploring other fields. I am very keen to solve problems by applying my computing knowledge.</p>
+            <img  src="PROFILE PIC.png" alt="Profile Img" id="profile-pic">
+        </div>
+    </section>
+
+    <!--Skills Section-->
+    <section id="Education">
+        <h1 class="edu-head">Skillset</h1>
+        <div class="edu-div">
+            <p class="edu-para">My Skillset includes :<br><br>+ HTML <br>+ CSS <br>+ JAVASCRIPT <br>+ C++ (OOP Also) <br><br>I am continuosly expanding my Skillset</p>
+        </div>
+    </section>
+
+    <!--Projects Section-->
+    <section id="Projects">
+        <h1 class="projects-main-head">Projects</h1>
+        <div class="select-div">
+            <select id="project-select">
+                <option value="All">All</option>
+                <option value="C++">C++</option>
+                <option value="frontend">Web Development</option>
+            </select>
+        </div>
+        <div class="projects-div">
+            <div class="project" id="Cpp">
+                <h2 class="projects-head">Book Order Store</h2>
+                <p class="projects-para">A console based book ordering application built with C++. This was my BSCS first semester Programming Fundamental's final project.</p>
+                <a href="https://github.com/Zulkifal05/Semester-01-Book-order-store-project" class="projects-links">Code Github Link!</a>
+            </div>
+            <div class="project" id="web-dev">
+                <h2 class="projects-head">Pharmacy Website</h2>
+                <p class="projects-para">A Pharmacy website built in HTML & CSS. This was my BSCS first semester ICT cource's final project. This was a frontend project and didn't include backend.</p>
+                <a href="https://github.com/Zulkifal05/Semester-01-Website-project.git" class="projects-links">Code Github Link!</a>
+            </div>
+            <div class="project" id="web-dev">
+                <h2 class="projects-head">Tic Tac Toe Game</h2>
+                <p class="projects-para">This game is built in HTML, CSS & JAVASCRIPT. It is my first project including Javascript But not the last. This strenghtened my JAVASCRIPT foundations.</p>
+                <a href="https://github.com/Zulkifal05/Tic-Tac-Toe-Game.git" class="projects-links">Code Github Link!</a>
+            </div>
+            <div class="project" id="web-dev">
+                <h2 class="projects-head">Rock Paper Scissors Game</h2>
+                <p class="projects-para">This game is built in HTML, CSS & JAVASCRIPT. I have used core JAVASCRIPT concepts in building this game.</p>
+                <a href="https://github.com/Zulkifal05/Rock-Paper-Scissors-Game.git" class="projects-links">Code Github Link!</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="Contact-Me">
+        <div class="contact-container">
+            <h2 class="contact-head">Contact Me!</h2>
+            <form class="contact-inputs">
+                <span>Name</span><br>
+                <input type="name" class="input" id="name"><br>
+                <span>Email</span><br>
+                <input type="email" class="input" id="email"><br>
+                <span>Message</span><br>
+                <textarea type="text" class="input" style="resize: none;padding: 2% 5% 9% 4%;" id="message"></textarea>
+                <div class="submit-btn-div">
+                    <button class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div style="height: 3vh;"></div>
+    <script src="index.js"></script>
+
+    <!--Emailjs link-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "nBobJGHgqW2rqWT4W",
+            });
+        })();
+    </script>
+</body>
+</html>
