@@ -1,5 +1,5 @@
 const select = document.querySelector("#project-select");
-const cpp = document.querySelector("#Cpp");
+const cpp = document.querySelectorAll("#Cpp");
 const web_dev = document.querySelectorAll("#web-dev");
 const menu_icon = document.querySelector(".menu-div");
 const menu_div = document.querySelector(".menu-icons-container");
@@ -15,13 +15,17 @@ select.addEventListener("change",() => {
         })
     }
     else if (value === "frontend") {
-        cpp.classList.add("hidden");
+        cpp.forEach((project) => {
+            project.classList.add("hidden");
+        })
         web_dev.forEach((web) => {
             web.classList.remove("hidden");
         })
     }
     else {
-        cpp.classList.remove("hidden");
+        cpp.forEach((project) => {
+            project.classList.remove("hidden");
+        })
         web_dev.forEach((web) => {
             web.classList.remove("hidden");
         })
